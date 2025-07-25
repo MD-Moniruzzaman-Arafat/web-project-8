@@ -41,38 +41,40 @@
                 </div>
             </div>
 
-            <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd">q</kbd>
-                <kbd class="kbd">w</kbd>
-                <kbd class="kbd">e</kbd>
-                <kbd class="kbd">r</kbd>
-                <kbd class="kbd">t</kbd>
-                <kbd class="kbd">y</kbd>
-                <kbd class="kbd">u</kbd>
-                <kbd class="kbd">i</kbd>
-                <kbd class="kbd">o</kbd>
-                <kbd class="kbd">p</kbd>
-            </div>
-            <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd">a</kbd>
-                <kbd class="kbd">s</kbd>
-                <kbd class="kbd">d</kbd>
-                <kbd class="kbd">f</kbd>
-                <kbd class="kbd">g</kbd>
-                <kbd class="kbd">h</kbd>
-                <kbd class="kbd">j</kbd>
-                <kbd class="kbd">k</kbd>
-                <kbd class="kbd">l</kbd>
-            </div>
-            <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd">z</kbd>
-                <kbd class="kbd">x</kbd>
-                <kbd class="kbd">c</kbd>
-                <kbd class="kbd">v</kbd>
-                <kbd class="kbd">b</kbd>
-                <kbd class="kbd">n</kbd>
-                <kbd class="kbd">m</kbd>
-                <kbd class="kbd">/</kbd>
+            <div id="keyboard">
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                </div>
             </div>
             <div class="flex justify-between mt-10 w-full">
                 <button
@@ -93,8 +95,8 @@
         <div class="flex flex-col items-center justify-center min-h-screen text-white hidden" id="game-over-screen">
             <div
                 class="bg-[linear-gradient(121deg,_rgba(255,255,255,0.56)_0%,_rgba(152,151,151,0)_102.2%)] border-1 border-[#FFFFFF33] rounded-lg text-center p-5">
-                <h1 class="text-5xl"><span class="font-bold">Score :</span> 14</h1>
-                <button class=" btn bg-[white] my-3" id="start-button">Play Now</button>
+                <h1 class="text-5xl"><span class="font-bold">Score :</span> <span id="alphabet-score">14</span></h1>
+                <button class=" btn bg-[white] my-3" id="again-start-button">Play Now</button>
                 <p>Practice will make you Pro</p>
             </div>
         </div>
