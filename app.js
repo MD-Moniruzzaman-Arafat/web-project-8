@@ -26,7 +26,8 @@ document.addEventListener('keyup', function (event) {
         score = score + 1;
         console.log('Correct key pressed');
         showAlphabet.innerText = alphabetsArray[Math.floor(Math.random() * alphabetsArray.length)];
-        console.log('Score:', score);
+        const liveScore = document.querySelector('.live-score');
+        liveScore.innerText = score;
     } else {
         console.log('Wrong key pressed');
         const gameOverScreen = document.getElementById('game-over-screen');
@@ -43,9 +44,10 @@ againStartButton.addEventListener('click', function () {
     const gameOverScreen = document.getElementById('game-over-screen');
     const startScreen = document.getElementById('start-screen');
     const gameScreen = document.getElementById('game-screen');
-
+    const liveScore = document.querySelector('.live-score');
     // Reset score
     score = 0;
+    liveScore.innerText = 0;
 
     // Hide the game over screen and show the start screen
     gameOverScreen.classList.add('hidden');
